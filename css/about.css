@@ -1,0 +1,180 @@
+/**********************************************************************************************************************
+---------------------------------------ABOUT US------------------------------------------------------------------------
+**********************************************************************************************************************/
+
+.AboutMainContent {
+    width: 700px;
+    margin-right: 70px;
+}
+
+
+/* TOP CONTENT */
+
+.SecondPContainer{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.jetroPic {
+    margin-right: 10px;
+    padding-top: 15px;
+}
+
+/* MIDDLE CONTENT */
+
+.mid {
+    margin-top: -10px;
+}
+
+.DPcontainer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+ 
+}
+
+#D h1{
+    font-family:'Helvetica';
+    color: #e8603c;
+    font-weight: 900;
+    margin: 5px 5px 0px 0px;
+}
+
+#belowD {
+    margin-top: -13px;
+}
+
+.italic {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vl {
+    border-left: 6px solid  #e8603c;
+    height: 20px;
+    margin-left: 50px;
+    margin-right: 10px;
+    padding-top: 40px;
+  }
+
+#italic {
+    font-style: italic;
+    margin-top: 0;
+}
+
+.topquotes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;;
+}
+
+.topquotes .first {
+    margin-right: 30px;
+}
+
+.botquotes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+
+.fn2{
+    margin-right: 20px;
+}
+
+
+/* BOTTOM CONTENT */
+
+.bottom .paragraphs p {
+    text-align: center;
+    border: 1px solid;
+    padding: 20px 0px;
+}
+
+#green {
+    border-color: #98c601;
+    background: #effeb9;
+}
+
+#red {
+    border-color: #eb5439;
+    background: #fbcbc1;
+}
+
+#orange {
+    border-color: #fab418;
+    background: #ffe9ad;
+}
+
+#blue {
+    border-color: #4d8fcb;
+    background: #d1e4f3;
+}
+
+/********************----MEDIA QUERIES----***********************/
+
+@media only screen and (max-width: 480px){
+
+    .AboutMainContent {
+        width: 100%;
+    }
+
+    .paragraphs {
+
+        display: inline-block;
+        flex-wrap: wrap;
+    }
+
+    .paragraphs p {
+        padding-left: 5px;
+    }
+
+    .SecondPContainer {
+        margin-left: 5px;
+        display: block;
+    }
+
+    .jetroPic img {
+        margin-left: 21%;
+        border: 2px solid #e8603c;
+    }
+
+    #about2P {
+        margin-left: -5px;
+    }
+
+    .DPcontainer {
+        justify-content: start;
+    }
+
+    #D h1{
+        font-size: 3em;
+        margin: 0 auto;
+
+    }
+
+    .italic {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .vl {
+        height: 105px;
+    }
+
+
+    .topquotes .first {
+        margin-right: 10px;
+    }
+
+    .botquotes{
+        display: flex;
+        margin-top: -10px;
+    }
+
+    .alertboxes {
+        display: grid;
+    }
+}

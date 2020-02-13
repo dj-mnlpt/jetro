@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* works for blog and about us*/
+
+.nine60 {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color:white;
+}
+
+.nine40 {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.contentDivider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutUsHeading {
+    height: 50px;
+    margin-top: -71px;
+    background-color: #e8603c ;
+    width: 940px;
+}
+
+.aboutUsHeading h1 {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    margin-left: 15px;
+    padding-top: 5px;
+}
+
+.SideContent {
+    width: 240px;
+}
+
+.paragraphs p{
+    font-family: 'Helvetica';
+    font-size: small;
+
+}
+
+.paragraphs ul {
+    font-family: 'Helvetica';
+    font-size: small;
+    list-style-type: none;
+    align-items: flex-start;
+}
+
+/**************
+-----BORDER----
+**************/
+
+.pink-line{
+    background: #F2AE9C;
+    min-height: 50px;   
+}
+
+.pink-line-bottom {
+    background: #F2AE9C;
+    min-height: 260px;   
+
+}
+
+/**************
+-----HEADER----
+**************/
+
+.main-header{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 940px;
+    padding: 10px 0px;
+   
+}
+
+.main-nav ul{
+    text-transform: uppercase;
+    max-width: 940px;
+    margin: 0 auto;
+    padding-left: 0;
+    font-family: 'Bebas Neue', cursive;  
+    font-size: 20px; 
+    
+}
+
+.main-nav li {
+    display: inline-flex;
+    padding-left: 25px; 
+
+}
+
+li .active {
+    color: #e8663c;
+}
+
+li a{
+    text-decoration: none;
+    color: #b9b9b9;
+}
+
+/**************
+-----FOOTER----
+**************/
+
+footer {
+    
+    width: 960px;
+    margin: 0 auto;
+    background: white;
+
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    background: #e8663c;
+    margin-top: -260px;  
+    margin-left: 10px;
+}
+
+.col {
+    width: 313px;
+    padding: 10px 20px;
+    color: white;
+
+}
+
+.col header {
+    font-family: 'Bebas Neue', cursive;
+   
+}
+
+.col p {
+    font-family: 'Helvetica';
+    font-size:  small;
+   
+}
+
+.col a {
+    text-decoration: none;
+    color: #f3b29d;
+}
+
+/* SIDE CONTENT */
+
+.SideHeaders h3 {
+    text-transform: uppercase;
+    color: #e8603c;
+    font-family: 'Bebas Neue', cursive;
+    position: relative;
+}
+
+.SideHeaders #topHeader::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/recentHeaderLine.jpg);
+    width: 63%;
+    height: 70%;
+    margin-left: 15px;
+    top: 3px;
+}
+
+.SideHeaders #midHeader::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/recentHeaderLine.jpg);
+    width: 64%;
+    height: 70%;
+    margin-left: 15px;
+    top: 3px;
+}
+
+.SideHeaders #botHeader::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/recentHeaderLine.jpg);
+    width: 49%;
+    height: 70%;
+    margin-left: 15px;
+    top: 3px;
+}
+
+.SideContent > div:nth-child(2) > div > ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sideboxes {
+    width: 240px;
+}
+
+.topboxes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.botboxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxes {
+    border: 2px solid #e8603c;
+    background: #f3af9d;
+    height: 50px;
+    width: 50px;
+}
+
+
+/******************home media queries********************/
+
+
+@media only screen and (max-width: 480px) {
+    .aboutUsHeading {
+        width: 100%;
+    }
+    .main-nav ul{
+        width: 100%;
+        font-size: x-large;
+    }
+
+    .main-nav ul li {
+      padding-left: 10px;
+    }
+
+    .main-nav ul li:not(:first-child) {
+        padding-left: 3.6%;
+      }
+
+    .logo img {
+        height: auto;
+        width: 50%;
+        margin-left: 25%;
+       
+    }
+
+    .logo {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .main-header {
+        margin: 0 auto;
+        display: block;
+    }
+
+    footer {
+        width: 95%;
+        margin-left: 0px;
+    }
+
+    .footerContent {
+        display: block;
+        background: #e8663c;
+        width: 100% ;
+    }
+
+
+    .pink-line-bottom {
+        visibility: hidden;
+    
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .contentDivider {
+        display: block;
+    }
+
+    .SideContent {
+        width: 95%;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .SideHeaders #topHeader::after {
+        width: 78%;
+    }
+    
+    .SideHeaders #midHeader::after {
+        width: 79%;
+    }
+    
+    .SideHeaders #botHeader::after {
+        width: 70%;
+    }
+
+    .boxes {
+        height: 75px;
+        width: 75px;
+    }
+  }

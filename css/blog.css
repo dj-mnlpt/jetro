@@ -1,0 +1,194 @@
+.BlogMainContent{
+    width: 700px;  
+}
+
+.top_pos_blog{
+    margin-top: 40px;
+  
+}
+
+.bot_blog {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.blogh4, .blogh2 {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: #e8603c;
+}
+
+.blogh4p, .blogh2p {
+    font-family: 'Helvetica';
+    font-size: small;
+}
+
+.botLeft .blogh4p {
+    color: #bababa;
+}
+
+.botLeft {
+    width: 140px;
+}
+
+.botRight {
+    width: 530px;
+}
+
+.divider {
+    width: 670px;
+    background-image: url(../img/recentHeaderLine.jpg);
+    height: 20px;
+    margin-top: 40px;
+}
+
+.sideIcon_blogPic_container {
+    position: relative;
+    overflow: visible;
+}
+
+.sideImg {
+    position: absolute;
+    top: 0px;
+    left: -85px;
+   
+}
+
+.blog4Qcontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    background-image: url(../img/quote_background.jpg);
+    height: 80px;
+    margin-right: 30px;
+}
+
+.blog4q img {
+    margin: 0px 20px 0px 30px;
+    margin-top: 20px
+}
+
+.blog4p {
+    font-style: italic; 
+    font-family:'Helvetica'; 
+    font-size: small;
+    padding-top: 15px;
+}
+
+.top_pos_blog h5 a {
+    text-decoration: none;
+    color:  #bababa;
+    font-family: 'Helvetica';
+
+}
+
+.top_pos_blog h5 {
+    margin: 0px;
+}
+
+.sideIcon_blogPic_container .top_pos_blog .blogh2 {
+    margin-bottom: 0px;
+}
+
+.pageselectorcontainer {
+    width: 99px;
+}
+
+.pageselector {
+    display: flex; 
+    justify-content: space-between; 
+
+}
+
+.button{
+    background-color: #e8603c;
+    opacity: 0.5;
+    height: 30px;
+    width: 32px;
+    margin-bottom: 40px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    text-align: center;
+}
+
+.button p {
+    margin-top: 5px;
+}
+
+.button:hover {
+    opacity: 1;
+}
+
+body {
+    overflow: visible;
+}
+
+#BlogSideContent {
+    margin-top: 18px;
+}
+
+/********************----MEDIA QUERIES----***********************/
+
+@media only screen and (max-width: 480px) {
+
+    .BlogMainContent {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .bot_blog {
+        display: block;
+    }
+
+    .top_pos_blog img {
+        width: 100%;
+    }
+
+    .top_pos_blog video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .botLeft {
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+    }
+
+    .botRight {
+        width: 57%;
+    }
+
+    .blogh4p {
+        padding-top: 8px;
+    }
+
+
+    .sideImg {
+        left: 0px;
+        position: static;
+        margin-top:  40px;
+        margin-left: 20px;
+    }
+
+    .sideIcon_blogPic_container {
+        position: static;
+        display: flex;
+    }
+
+    .divider {
+        width: 100%;
+    }
+
+    .blog4Qcontainer {
+        height: 100%;
+        width: 100%;
+        margin-right: 0px;
+    }
+    
+    .blog4p {
+        padding-right: 10px;
+    }
+
+}
