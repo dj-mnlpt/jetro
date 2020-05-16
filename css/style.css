@@ -11,10 +11,14 @@
     position: relative;
 }
 
+.bannerContainer {
+    margin: 0 10px;
+}
+
 .banner {
     overflow: hidden;
     padding-bottom: 15px;   
-    margin: 0 10px;
+    height: 415px;
 }
 
 .banner-desc {
@@ -113,6 +117,10 @@
     
 }
 
+.headerRecent {
+    overflow: hidden;
+}
+
 .headerRecent header h1::after {
     position: absolute;
     content: "";
@@ -126,6 +134,7 @@
 
 .recentWorks {
     display: flex; 
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 35px;
     margin-left: 10px;
